@@ -21,7 +21,7 @@
         <th>Lương</th>
         <th>Đánh giá</th>
     </tr>
-    <c:forEach items="${employees}" var="employee">
+    <c:forEach items="${employees}" var="employee" varStatus="loop">
         <tr>
             <td>${employee.id}</td>
             <td>${employee.fullName}</td>
